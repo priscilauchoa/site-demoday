@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+    <div class="botao-candidado">
+            <p>{{item.nome}}</p>
+            <p>{{item.telefone}}</p>
+            <!-- <img src="{{ item.cartaz.url }}" alt="Cartaz do filme {{item.nome}}" width="150px"> -->
+        </div>
+    {% endfor %}
+{% endblock %}
