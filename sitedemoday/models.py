@@ -3,8 +3,8 @@ from django.utils import timezone
 
 class Candidato(models.Model):
     nome = models.CharField(max_length=200)
-    telefone = models.IntegerField(max_length=13)
-    celular = models.IntegerField(max_length=14)
+    telefone = models.IntegerField()
+    celular = models.IntegerField()
     email = models.EmailField()
     endereco = models.CharField(max_length=80)
     experiencia_prof = models.CharField(max_length=1000)

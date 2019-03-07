@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from sitedemoday.views import cadastro_candidato
+from cadastro.views import criar_cadastro
 
 urlpatterns = [
     path('', cadastro_candidato),
     path('admin/', admin.site.urls),
+    
 ]
